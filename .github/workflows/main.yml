@@ -10,48 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up SSH
-      run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.AZURE_SSH_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.AZURE_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Deploy on Azure Windows Server
-      run: |
-        ssh ${{ secrets.AZURE_USERNAME }}@${{ secrets.AZURE_HOST }} powershell -Command "
-          echo '=== DEPLOYMENT STARTED ===';
-
-          \$workTree = 'C:/Users/inphamed/Desktop/git/gitAutomation/auto_action_deploy';
-          \$buildDest = 'C:/Users/inphamed/Desktop/inphamed';
-
-          echo '>>> Navigating to workTree path...';
-          Set-Location \$workTree;
-
-          echo '>>> Pulling latest code from GitHub...';
-          git pull origin main;
-
-          echo '>>> Installing dependencies...';
-          npm install;
-
-          echo '>>> Building the project...';
-          npm run build;
-
-          if (Test-Path \$buildDest) {
-            echo '>>> Cleaning previous build folder...';
-            Remove-Item -Path \$buildDest\\* -Recurse -Force;
-          } else {
-            echo '>>> Creating build destination folder...';
-            New-Item -ItemType Directory -Path \$buildDest;
-          }
-
-          echo '>>> Moving build files to \$buildDest...';
-          Copy-Item -Path \$workTree\\dist\\* -Destination \$buildDest -Recurse;
-
-          echo '=== DEPLOYMENT COMPLETED SUCCESSFULLY ===';
-
-          echo 'Deployed at: ' (Get-Date) >> C:/Users/inphamed/Desktop/deploy-log.txt;
-        "
+      - name: Deploy on Azure Windows Server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.AZURE_USERNAME }}@${{ secrets.AZURE_HOST }} << 'EOF'
+            cd C:\Users\inphamed\Desktop\git\gitAutomation\auto_action_deploy  # Replace with actual path, e.g., D:\apps\my-app
+            call npm install
+            call npm run build
+          EOF
