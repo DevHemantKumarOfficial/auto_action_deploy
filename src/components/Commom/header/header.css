@@ -1,0 +1,74 @@
+.inphamed-logo-icon {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 20px;
+  width: 181.8px;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* -- header --- */
+.header {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dce3ee;
+}
+
+.header .right {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+/* ---- username ---- */
+
+.header .right .right-1 {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 10px;
+}
+.header .right .right-1 .user-icon {
+  width: 24px;
+  height: 24px;
+}
+.header .right .right-1 .user-name {
+  color: #9e028f;
+
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ----- logout-icon ------- */
+.header .right .right-2 {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  border: 1px solid #bcc5d5;
+  cursor: pointer;
+  background: #fff;
+}
+.header .right .right-2 .user-icon {
+  width: 19.8px;
+  height: 18px;
+}
+.header .right .right-2 .logout-text {
+  color: #030229;
+  opacity: 0.7;
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

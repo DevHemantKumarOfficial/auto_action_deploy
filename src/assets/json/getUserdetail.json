@@ -1,0 +1,66 @@
+[
+    {
+        "_id": {
+          "$oid": "66a24bf344592042e5a647fd"
+        },
+        "accountNumber": "123456789",
+        "clientName": "Hemant Jha",
+        "company": "XYZ",
+        "email": "hemant.jha@mittalsoftwarelabs.com",
+        "address": "1234 Elm Street, Suite 567",
+        "country": "USA",
+        "gst_vat": "987654321",
+        "startDate": "2024-01-01",
+        "endDate": "2025-01-01",
+        "subscription": "Premium",
+        "membershipStatus": "Trial",
+        "accountManager": "Anurag",
+        "password": "$2b$10$YyQ0UtepAlOlTyYWvmkJEeNFDPSQzTCL4SFRcV4hk.wW1gHOtadQa",
+        "accessReason": [
+          "USA",
+          "Europe"
+        ],
+        "roles": "admin",
+        "isValid": true,
+        "createdAt": {
+          "$date": "2024-07-25T12:58:27.089Z"
+        },
+        "updatedAt": {
+          "$date": "2024-08-15T18:40:04.980Z"
+        },
+        "__v": 0,
+        "latestLoginDetail": "2024-08-15T18:40:04.980Z"
+      },
+      {
+        "_id": {
+          "$oid": "66a64200b06ddf09e502909f"
+        },
+        "accountNumber": "12344556",
+        "clientName": "Demo User",
+        "company": "XYZ",
+        "email": "demoUser@xyz.com",
+        "address": "UBR",
+        "country": "india",
+        "gst_vat": "wjdbiqwdqhdqe1212312",
+        "startDate": "2024-07-28",
+        "endDate": "2024-08-27",
+        "subscription": "Subscription",
+        "membershipStatus": "Trial",
+        "accountManager": "Manager",
+        "password": "$2b$10$TCYKEGm9mx7bbKXq0TbFYuDvMOYjeOviZCERkRdyJyxZqHWoXq8tW",
+        "accessReason": [
+          "USA"
+        ],
+        "roles": "user",
+        "createdBy": "66a24bf344592042e5a647fd",
+        "isValid": true,
+        "createdAt": {
+          "$date": "2024-07-28T13:05:04.800Z"
+        },
+        "updatedAt": {
+          "$date": "2024-07-29T06:11:15.614Z"
+        },
+        "__v": 0,
+        "latestLoginDetail": "2024-07-28T13:07:39.428Z"
+      }
+]

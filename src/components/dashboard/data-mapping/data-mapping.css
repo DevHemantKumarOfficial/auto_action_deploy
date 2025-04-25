@@ -1,0 +1,200 @@
+.container {
+  height: 90vh;
+}
+
+.container .heading {
+  display: inline-flex;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #030229;
+
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 26px 0;
+}
+
+
+.form_container input::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background-image: url("../../../assets/images/calendar icon.svg");
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* margin-left: 12rem; */
+}
+
+::-webkit-calendar-picker-indicator:hover {
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+}
+
+.container .form_container {
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.container .form_container .content {
+  display: inline-flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  width: fit-content;
+  /* margin: auto; */
+  /* margin-left: 35px;
+  margin-top: 38px; */
+
+}
+
+.container .form_container .content .textbox-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container .form_container .content .textbox {
+  display: flex;
+  width: 150px;
+  padding: 12px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f5f7fa;
+  border: none;
+  outline: none;
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.9;
+}
+
+.container .form_container .content .textbox:focus {
+  background: #dddfe2;
+}
+
+.text_disable {
+  background: #dddfe2 !important;
+}
+
+button {
+  display: flex;
+  width: fit-content;
+  /* height: 49.398px; */
+  padding: 8px 15px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 1px solid #000;
+
+  background: #242259;
+  color: #fff;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.save_btn {
+  background-color: #9e028f !important;
+  border-color: #9e028f !important;
+}
+
+.content .input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.container .form_container .row {
+  /* width: 100%; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+
+
+.cust_error {
+  border-radius: 1px solid red !important;
+}
+
+.actBtn_container {
+  display: flex;
+  gap: 5px;
+}
+
+/* --------------------------- */
+.custom-select-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: flex;
+  width: 150px;
+  padding: 10px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f5f7fa;
+  border: 0px solid transparent;
+  outline: none;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+.custom-select-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('../../../assets/images/calendar icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  /* Prevent click on the icon */
+}

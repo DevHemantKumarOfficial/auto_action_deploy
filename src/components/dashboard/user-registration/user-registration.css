@@ -1,0 +1,242 @@
+.a-container {
+  margin: 0 20px;
+}
+
+.a-container .heading {
+  display: inline-flex;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #030229;
+
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 26px 0;
+}
+
+.a-container .form {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.a-container .form .content {
+  display: inline-flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  width: fit-content;
+  /* margin: auto; */
+  margin-left: 35px;
+  margin-top: 38px;
+  
+}
+.a-container .form .content .textbox-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.a-container .form .content .textbox {
+  display: flex;
+  width: 350px;
+  padding: 17px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f5f7fa;
+  border: none;
+  outline: none;
+
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.9;
+}
+.a-container .form .content .textbox:focus {
+  background: #dddfe2;
+}
+
+.submit-button {
+  margin: 90px auto 120px;
+  /* margin-top: 90px; */
+}
+.submit-button button {
+  display: flex;
+  width: 350px;
+  height: 49.398px;
+  padding: 14px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+
+  background: #242259;
+  color: #fff;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content .input-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* ::-webkit-search-cancel-button,
+  ::-webkit-clear-button {
+    -webkit-appearance: none;
+    background-image: url('../../assets/images/calendar icon.svg');
+    color: rgba(0, 0, 0, 0.54);
+    cursor: pointer;
+    height: 1.5rem;
+    margin-right: 0;
+    width: 1.5rem;
+  } */
+
+.a-container
+  .form
+  form
+  .roww
+  .content
+  input::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background-image: url("../../../assets/images/calendar icon.svg");
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 12rem;
+}
+::-webkit-calendar-picker-indicator:hover {
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+}
+.form form{
+  margin: auto;
+}
+.a-container .form .roww {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.a-container .form .content-2 {
+ align-self: flex-start;
+}
+.a-container .form .content-2 .textbox-head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.a-container .form .content-2 .textbox {
+  display: flex;
+  width: 350px;
+  padding: 17px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f5f7fa;
+  border: none;
+  outline: none;
+
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+.a-container .form .content-2 .textbox:focus {
+  background: #dddfe2;
+}
+
+/* ------------ multi-select ------------------------  */
+.content-2 .css-13cymwt-control {
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  background: #f5f7fa;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 350px;
+  height: 51.6px;
+}
+.content-2 .css-t3ipsp-control {
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  background: #dddfe2;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 350px;
+  border: none;
+  box-shadow: none;
+  height: 51.6px;
+}
+.content-2 .css-t3ipsp-control:hover {
+  background-color: #dddfe2;
+  box-shadow: none;
+}
+
+.content-2 .css-1p3m7a8-multiValue {
+  background-color: #c3d7ff;
+}
+
+.content-2 .css-1y7rh0y-MultiValueGeneric2 {
+  color: black;
+  font-weight: 700;
+}
+
+.content .error {
+  color: red;
+  font-size: 12px;
+  font-family: Nunito;
+  font-style: normal;
+}

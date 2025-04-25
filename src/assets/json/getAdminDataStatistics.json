@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Drugs",
+        "regions": "United States",
+        "count": 13
+    },
+    {
+        "title": "Drugs",
+        "regions": "Europe",
+        "count": 4
+    },
+    {
+        "title": "API Manufacturers",
+        "regions": "",
+        "count": 1524
+    },
+    {
+        "title": "Clinical Trials",
+        "regions": "United States",
+        "count": 1777
+    },
+    {
+        "title": "Clinical Trials",
+        "regions": "Europe",
+        "count": 1195
+    }
+]

@@ -1,0 +1,159 @@
+.bg {
+  background-image: url("/src/assets/images/Admin-login-bg.svg");
+  /* min-height: 100%; */
+  height: 100vh;
+
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.frame {
+  display: flex;
+  width: 1000px;
+  /* height: 650px; */
+  padding: 80px 200px 100px 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  margin: auto auto;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.head .logo {
+  width: 250px;
+  height: 54.992px;
+}
+
+.head p {
+  color: #242259;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.form form {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 30px 375px;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+}
+
+.form-input .input-label {
+  width: 100%;
+  height: 22px;
+  color: #030229;
+
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-input .inp {
+  width: 600px;
+  height: 50px;
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #f5f7fa;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  opacity: 0.7;
+}
+.form-input .inp:focus {
+  /* border-color: #d3d5d6; */
+  background-color: #e0e1e4;
+  outline: none;
+}
+.form-extras {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-extras .remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-extras .remember-me .text {
+  color: var(--Text, #030229);
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-extras .remember-me .checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.form-extras .reset-password a {
+  color: #9e028f;
+  cursor: pointer;
+  font-family: Nunito;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form button {
+  display: flex;
+  width: 600px;
+  height: 50px;
+  padding: 14px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #242259;
+  color: #fff;
+
+  text-align: center;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  cursor: pointer;
+  color: #5c646d;
+}
+.form-input .error {
+  color: red;
+  font-size: 13px;
+}

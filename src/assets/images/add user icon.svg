@@ -1,0 +1,20 @@
+<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="add user icon" clip-path="url(#clip0_273_1507)">
+        <path id="Vector"
+            d="M7.19666 9.30152C9.36771 9.30152 11.1277 7.54154 11.1277 5.37049C11.1277 3.19944 9.36771 1.43945 7.19666 1.43945C5.02561 1.43945 3.26562 3.19944 3.26562 5.37049C3.26562 7.54154 5.02561 9.30152 7.19666 9.30152Z"
+            stroke="#1C274C" stroke-miterlimit="10" />
+        <path id="Vector_2"
+            d="M1.2998 15.1981C1.2998 11.9412 3.93949 9.30151 7.19636 9.30151C8.4176 9.30151 9.55236 9.673 10.4932 10.3085"
+            stroke="#1C274C" stroke-miterlimit="10" />
+        <path id="Vector_3"
+            d="M13.7483 18.4739C16.2812 18.4739 18.3345 16.4206 18.3345 13.8877C18.3345 11.3548 16.2812 9.30151 13.7483 9.30151C11.2154 9.30151 9.16211 11.3548 9.16211 13.8877C9.16211 16.4206 11.2154 18.4739 13.7483 18.4739Z"
+            stroke="#1C274C" stroke-miterlimit="10" />
+        <path id="Vector_4" d="M13.748 16.5082V11.2668" stroke="#1C274C" stroke-miterlimit="10" />
+        <path id="Vector_5" d="M11.127 13.8877H16.3683" stroke="#1C274C" stroke-miterlimit="10" />
+    </g>
+    <defs>
+        <clipPath id="clip0_273_1507">
+            <rect width="19" height="19" fill="#1C274C" transform="translate(0 0.19458)" />
+        </clipPath>
+    </defs>
+</svg>

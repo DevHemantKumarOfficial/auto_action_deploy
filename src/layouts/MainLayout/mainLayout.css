@@ -1,0 +1,19 @@
+.drug-details {
+    border: 2px solid #c1b7b76c;
+    border-radius: 15px;
+}
+
+.drug-name {
+    background-color: rgb(235, 236, 243);
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.drug-det {
+    padding: 10px;
+}
+
+.search-result {
+    margin: 30px 10px;
+}
