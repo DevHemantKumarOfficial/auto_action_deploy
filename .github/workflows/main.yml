@@ -1,9 +1,9 @@
-name: CI/CD Deploy to Azure Windows Server
+name: CI/CD Deploy to Linux Server
 
 on:
   push:
     branches:
-      - main  # Change if using a different branch
+      - main  # Adjust if you use a different branch
 
 jobs:
   deploy:
@@ -16,14 +16,17 @@ jobs:
       - name: Set up SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.AZURE_SSH_KEY }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.LINUX_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.AZURE_HOST }} >> ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.LINUX_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy on Azure Windows Server
+      - name: Deploy to Linux Server
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.AZURE_USERNAME }}@${{ secrets.AZURE_HOST }} << 'EOF'
-            cd /d C:\Users\inphamed\Desktop\git\gitAutomation\auto_action_deploy
-            call npm install
-            call npm run build
+          ssh -o StrictHostKeyChecking=no ${{ secrets.LINUX_USERNAME }}@${{ secrets.LINUX_HOST }} << 'EOF'
+            cd /home/kasquare/git/project/auto_action_deploy
+            git pull origin main
+            npm install
+            npm run build
+            rm -rf /home/kasquare/project_build/*
+            cp -r dist/* /home/kasquare/project_build/
           EOF
