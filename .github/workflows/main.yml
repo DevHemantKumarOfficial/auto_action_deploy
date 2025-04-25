@@ -3,7 +3,7 @@ name: CI/CD Deploy to Azure Windows Server
 on:
   push:
     branches:
-      - main  # Change if you’re using a different branch
+      - main  # Change if using a different branch
 
 jobs:
   deploy:
@@ -23,7 +23,7 @@ jobs:
       - name: Deploy on Azure Windows Server
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.AZURE_USERNAME }}@${{ secrets.AZURE_HOST }} << 'EOF'
-            cd C:\Users\inphamed\Desktop\git\gitAutomation\auto_action_deploy  # Replace with actual path, e.g., D:\apps\my-app
+            cd /d C:\Users\inphamed\Desktop\git\gitAutomation\auto_action_deploy
             call npm install
             call npm run build
           EOF
