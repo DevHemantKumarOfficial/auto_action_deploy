@@ -212,7 +212,7 @@ export const Login = () => {
         <div className="head">
           <img src={logo} className="logo"></img>
           {/* <img className="logo" src="/src/assets/images/inphamed-logo.svg" alt="inphamed-logo" /> */}
-          <p className="tagline">Automation test 2</p>
+          <p className="tagline">Automation test 3</p>
         </div>
         <div className="form">
           <form onSubmit={handleSubmit}>
