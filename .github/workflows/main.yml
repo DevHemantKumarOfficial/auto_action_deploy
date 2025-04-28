@@ -18,7 +18,6 @@ jobs:
           echo "${{ secrets.LINUX_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.LINUX_HOST }} >> ~/.ssh/known_hosts
-		  
       - name: Deploy to Linux Server
         env:  #Pass secrets as ENV variables
           SERVER_USER: ${{ secrets.LINUX_USERNAME }}
